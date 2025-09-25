@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Proba Pro";
+    src: url("./assets/fonts/ProbaPro-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    background: #fff;
+    color: #2c3e50;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5575b8;
+    padding: 0px 0px;
+}
+
+    .navbar img {
+        padding: 10px 20px 0px 20px;
+        width: 25%;
+        height: 25%;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+    }
+
+main {
+    padding-top: 80px;
+    width: 100vw;
+}
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5575b8;
+    color: #fff;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.footer-copy {
+    font-size: 14px;
+}
+
+.footer-contacts {
+    display: flex;
+    gap: 20px;
+}
+
+    .footer-contacts a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .footer-contacts a:hover {
+            color: #8fc145;
+        }
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-contacts {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+a {
+    color: black;
+}
+a:hover {
+    color: white;
+}
+
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+/* FeedBackForm */
+
+/* feedback.css */
+.feedback-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+    margin: 0 auto 50px;
+}
+.feedback-form h2 {
+
+    margin: 0 auto 50px;
+}
+
+    .feedback-form input,
+    .feedback-form textarea {
+        padding: 12px 15px;
+        border: 1px solid #8fc145;
+        border-radius: 8px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        margin: 10px;
+    }
+
+        .feedback-form input:focus,
+        .feedback-form textarea:focus {
+            border-color: #8fc145;
+            outline: none;
+        }
+
+    .feedback-form button {
+        background-color: #8fc145;
+        color: #fff;
+        border: none;
+        padding: 14px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 0px 0px 0px 10px;
+    }
+
+        .feedback-form button:hover {
+            background-color: #6da134;
+        }
+
+/* адаптив */
+@media (max-width: 480px) {
+    .feedback-section {
+        padding: 10px;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        font-size: 14px;
+    }
+}

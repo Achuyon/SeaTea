@@ -1,0 +1,137 @@
+.about {
+    margin: 0 auto;
+    margin-top: -10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+}
+
+/* Герой */
+.about-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/hero.jpeg");
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+}
+
+    .about-hero h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .about-hero p {
+        font-size: 22px;
+    }
+
+/* Історія */
+.about-history {
+    margin-bottom: 50px;
+}
+
+    .about-history h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .about-history p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+/* Команда */
+.about-team h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 220px;
+    text-align: center;
+}
+
+    .team-card img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .team-card h3 {
+        margin-bottom: 5px;
+    }
+
+    .team-card p {
+        font-size: 16px;
+    }
+
+/* Цінності */
+.about-values {
+    margin: 50px 0;
+}
+
+.values-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #8fc145;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+    .value-card h3 {
+        margin-bottom: 10px;
+    }
+
+    .value-card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+/* CTA */
+.about-cta {
+    margin: 50px 0;
+}
+
+    .about-cta .btn {
+        background-color: #8fc145;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .about-cta .btn:hover {
+            background-color: #6da134;
+        }
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .team-cards, .values-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card, .value-card {
+        width: 80%;
+    }
+}

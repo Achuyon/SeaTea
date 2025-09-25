@@ -1,0 +1,278 @@
+.left {
+    margin-left: -300px;
+}
+.right {
+    margin-right: -300px;
+}
+.more-link {
+    display: inline-block;
+    width: fit-content;
+    align-self: flex-start;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 500;
+    border-bottom: solid 1px #8fc145;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+    .more-link:hover {
+        color: #8fc145;
+    }
+.more-link-btn {
+    background-color: #8fc145;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
+    max-width: 25%;
+}
+
+    .more-link-btn:hover {
+        background-color: #89B942;
+    }
+.product-link {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+    .product-link:hover {
+        color: #2c3e50;
+    }
+/* Головна сторінка */
+section {
+    margin-bottom: 50px;
+}
+.hero {
+    margin-top: -10px;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/hero.jpeg");
+    height: 75vh;
+    background-size: cover;
+}
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .hero .btn {
+        padding: 12px 25px;
+        background: #27ae60;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .hero .btn:hover {
+            background: #1e8449;
+        }
+
+/* Переваги */
+.advantages {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.adv-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.adv-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #8fc145;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    color: #2c3e50;
+}
+
+    .adv-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .adv-card h3 {
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+/* Еко вироб. коротко */
+.p-eco {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 50px; 
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+    h2 {
+        color: #2c3e50;
+        font-size: 16px;
+        letter-spacing: 5px;
+        margin-bottom: 36px;
+    }
+    .p-eco p {
+        color: #2c3e50;
+        margin-bottom: 36px;
+        font-size: 16px;
+    }
+    .p-eco .p-eco-info {
+        flex: 1 1 400px;
+        text-align: left;
+        max-width: 700px;
+    }
+
+    .p-eco .sert {
+        border: 4px solid #8fc145;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        flex: 0 0 360px;
+        padding: 0;
+    }
+
+        .p-eco .sert img {
+            width: 60px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .p-eco .sert .img-sert {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: #fff;
+            padding: 10px 20px;
+            margin-top: -60px;
+            width: auto;
+            box-sizing: border-box;
+        }
+
+            .p-eco .sert .img-sert p {
+                margin: 0;
+                font-size: 12px;
+                text-align: center;
+                max-width: 100px; 
+            }
+    .p-eco .sert p {
+        margin: 40px;
+        text-align: center;
+    }
+    .p-eco h3 {
+        color: #2c3e50;
+        margin-bottom: -30px;
+    }
+
+.products-short {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+    .products-short-card .btn {
+        
+        padding: 12px 25px;
+        background: #27ae60;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+.products-short-card h2 {
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.products-short-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    margin: 0 auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+    .products-short-card img {
+        width: 300px;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+
+    .products-short-card:hover img {
+        transform: scale(1.1);
+    }
+
+.products-short-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products-short-info {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+/* Для парних карток трохи зміщуємо вправо */
+.products-short-card:nth-child(even) {
+    margin-left: 300px;
+}
+
+/* Для непарних карток трохи зміщуємо вліво */
+.products-short-card:nth-child(odd) {
+    margin-right: 300px;
+}
+
+@media (max-width: 900px) {
+    .products-short-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+        .products-short-card img {
+            width: 80%;
+        }
+
+    .products-short-info {
+        justify-content: center;
+    }
+}
