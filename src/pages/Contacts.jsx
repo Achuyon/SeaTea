@@ -1,6 +1,21 @@
 ﻿import "../assets/contacts.css";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaTelegramPlane } from "react-icons/fa";
 
+const TeaVideo = () => {
+    return (
+        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
+            <iframe
+                src="https://www.youtube.com/embed/Yx8EmMuMjgM"
+                title="Процес виробництва чаю"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ position: "absolute", top: 50, left: 0, width: "100%", height: "100%" }}
+            />
+        </div>
+    );
+};
+
+
 export default function Contacts() {
     return (
         <section className="contacts">
@@ -41,6 +56,8 @@ export default function Contacts() {
                     <p>Сб-Нд: 10:00 - 16:00</p>
                 </div>
             </div>
+            <h2 style={{marginBottom:0,marginTop: 50}}>Як це готується: Чай</h2>
+            <TeaVideo />
         </section>
     );
 }

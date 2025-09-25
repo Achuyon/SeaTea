@@ -71,10 +71,10 @@ p {
 .production-card {
     display: flex;
     align-items: center;
-    justify-content: center; /* центрує всю картку по сторінці */
+    justify-content: center;
     gap: 30px;
     width: 100%;
-    margin: 50px auto; /* центрування картки по сторінці */
+    margin: 50px auto;
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s ease-out;
@@ -100,8 +100,8 @@ p {
 
 .production-info {
     flex: 1;
-    max-width: 700px; /* обмежує ширину тексту */
-    text-align: left; /* текст всередині ліворуч */
+    max-width: 700px;
+    text-align: left;
     margin-top: -100px;
     
 }
@@ -128,13 +128,23 @@ p {
     margin-left: 0px;
     margin-bottom: 20px;
 }
-/* Адаптивність */
+.gmap_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gmap {
+    max-width: 960px;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .production-card {
         flex-direction: column;
-        text-align: center; /* текст по центру */
-        justify-content: center; /* картка по центру */
-        align-items: center; /* елементи по центру */
+        text-align: center; 
+        justify-content: center;
+        align-items: center;
         margin: 30px auto;
     }
 
@@ -144,7 +154,7 @@ p {
         }
 
     .production-info {
-        width: 100%; /* щоб текст не зсувався */
+        width: 100%;
         text-align: center;
     }
 }

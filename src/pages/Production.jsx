@@ -1,6 +1,7 @@
 ﻿import { Link } from "react-router-dom";
 import "../assets/production.css";
 import { useEffect } from "react";
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 function ProductionCard({ children }) {
     useEffect(() => {
@@ -25,13 +26,22 @@ function ProductionCard({ children }) {
     return <>{children}</>;
 }
 
+const containerStyle = {
+    width: "100%",
+    height: "400px"
+};
+
+const center = {
+    lat: 48.67049639703648,
+    lng: 23.332749231330006
+};
 
 export default function Production() {
     return (
         <section className="Production">
             <section className="production-hero">
                 <h1>ЕКО ВИРОБНИЦТВО</h1>
-                <p className="infoProd1">Екологічне та відповідальне виробництво дозволяє зберегти природну силу складових чаю MOL’FAR з моменту збору, до моменту його заварювання у вашому горнятку.</p>
+                <p className="infoProd1">Екологічне та відповідальне виробництво дозволяє зберегти природну силу складових чаю SeaTea з моменту збору, до моменту його заварювання у вашому горнятку.</p>
             </section>
             <img src=""></img>
             <section className="production-steps">
@@ -43,6 +53,15 @@ export default function Production() {
                             На північних схилах Полонини Боржави, там, де височіє гора Гемба, серед крутих скель та лісів причаївся водоспад Шипіт. Іноді тільки несамовитий рев води може підказати, що поблизу є потік з мальовничим водограєм.
                         </p>
                         <p className="infoProd">Найближче до цієї природної атракції селище — Пилипець. Саме тут, поряд з одним із семи природних чудес України, на мальовничих схилах українських Карпат влаштувалися щедрі плантації дивовижної рослини — кипрію.</p>
+                        <div className="gmap_cont">
+                        <div className="gmap">
+                        <LoadScript googleMapsApiKey="AIzaSyDyfKBgFBfr2eqRbc67AgpscP8FX5UeSg8">
+                            <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
+                                
+                            </GoogleMap>
+                            </LoadScript>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -135,12 +154,12 @@ export default function Production() {
                                     <h3>06. Фасування</h3>
                                     <hr className="hrProduction" color="#2c3e50"></hr>
                                     <p className="infoProd2">
-                                        Готовий чай MOL’FAR міксується за авторськими рецептами наших технологів, та фасується у крафтову упаковку.
+                                        Готовий чай SeaTea міксується за авторськими рецептами наших технологів, та фасується у крафтову упаковку.
                                     </p>
                                     <p className="infoProd2">
                                         Крафтова упаковка виготовлена з екологічних та етичних (що швидко розкладаються) матеріалів — мінімальна кількість фарби, не містить клею, поліетилену чи поліпропилену.
                                     </p>
-                                        Саме у такому вигляді органічний чай MOL’FAR портапить до ваших рук!                                
+                                        Саме у такому вигляді органічний чай SeaTea портапить до ваших рук!                                
                                     </p>
                             </div>
                         </div>

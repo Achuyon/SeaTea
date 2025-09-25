@@ -251,12 +251,11 @@ section {
     flex-direction: column; 
     justify-content: center; 
 }
-/* Для парних карток трохи зміщуємо вправо */
+
 .products-short-card:nth-child(even) {
     margin-left: 300px;
 }
 
-/* Для непарних карток трохи зміщуємо вліво */
 .products-short-card:nth-child(odd) {
     margin-right: 300px;
 }
@@ -267,7 +266,13 @@ section {
         align-items: center;
         text-align: center;
     }
+        .products-short-card:nth-child(even) {
+            margin-left: 0;
+        }
 
+        .products-short-card:nth-child(odd) {
+            margin-right: 0;
+        }
         .products-short-card img {
             width: 80%;
         }

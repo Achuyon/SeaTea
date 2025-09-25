@@ -1,6 +1,7 @@
 ﻿import { Link } from "react-router-dom";
 import { teaCards } from "../data/cards";
 import FeedbackForm from "../components/FeedbackForm.jsx";
+import TeaOfTheDay from "../components/TeaOfTheDay.jsx";
 import "../assets/home.css";
 import "../components/FeedBackForm.jsx";
 
@@ -79,6 +80,7 @@ export default function Home() {
                 ))}
             </section>
             <FeedbackForm />
+            <TeaOfTheDay />
         </div>
     );
 }

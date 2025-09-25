@@ -1,0 +1,362 @@
+/* ===============================
+   Сторінка продукції
+================================ */
+.products-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===============================
+   Сайдбар фільтрів
+================================ */
+.sidebar-filter {
+    flex: 0 0 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #5575B8;
+    border-radius: 10px;
+    padding: 15px;
+    position: sticky;
+    top: 170px;
+    max-height: 90vh;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    overflow-y: hidden;
+}
+
+    .sidebar-filter h4 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        font-size: 22px;
+    }
+
+.fltrpath {
+    margin-bottom: 20px;
+}
+
+    .fltrpath h5 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #2c3e50;
+    }
+
+    /* Пошук по скілам */
+    .fltrpath input[type="text"] {
+        width: 90%;
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+/* Чекбокси */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+    .checkbox-label input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        accent-color: #5575B8;
+    }
+
+/* Інпут для мін/макс зарплати */
+.fltrpath input[type="number"] {
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+/* Кнопка фільтра */
+.fbtn {
+    width: 100%;
+    padding: 8px 0;
+    background-color: #5575B8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+    .fbtn:hover {
+        background-color: #0e746e;
+    }
+.fltrHead .close {
+    background-color: #fff;
+    margin: 0 auto;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    padding: 10px 10px 6px 10px;
+    display: none;
+}
+/* ===============================
+   Картки чаю
+================================ */
+.tea-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    flex: 1;
+    align-items: stretch;
+}
+
+.tea-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+    max-height: 450px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+    .tea-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .tea-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+    .tea-card .description {
+
+    }
+.tea-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+    .tea-card h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #2c3e50;
+    }
+
+    .tea-card p {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.4;
+    }
+.sidebar-filter {
+    flex: 0 0 250px;
+}
+.sidebar-filter .fltrs {
+    max-height: 81vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 15px; 
+    padding-right: 5px;
+    box-sizing: content-box;
+    direction: rtl;
+}
+    .closed {
+        display: none !important;
+    }
+    .sidebar-filter .fltrs * {
+        direction: ltr; 
+    }
+
+    /* Стилізація скролбару */
+    .sidebar-filter .fltrs::-webkit-scrollbar {
+        width: 10px;
+        background-color: transparent;
+    }
+
+    .sidebar-filter .fltrs::-webkit-scrollbar-track {
+        background: #f0f0f0;
+        border-radius: 5px;
+    }
+
+.sidebar-filter .fltrs::-webkit-scrollbar-thumb {
+    background-color: #5575B8;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+}
+
+        .sidebar-filter .fltrs::-webkit-scrollbar-thumb:hover {
+            background-color: #0f7d6f;
+        }
+.price {
+    background-color: none;
+    border: 1px solid #5575B8;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.rate {
+    background-color: #5575B8;
+    border-radius: 5px;
+    color: #fff !important;
+    padding: 8px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.clickable-img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+    .clickable-img:hover {
+        transform: scale(1.05);
+    }
+
+/* Модальне вікно */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    animation: zoomIn 0.3s ease;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.products-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 2%;
+    max-width: 95.5%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+    .products-controls select {
+        background: #5575B8;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 10px;
+    }
+.products-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    border: 0px;
+}
+.filter-btn {
+    background-color: #5575B8;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0;
+}
+
+    .filter-btn:hover {
+        background-color: #5575B8;
+    }
+
+.sort-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ===============================
+   Адаптивність
+================================ */
+@media (max-width: 768px) {
+    .products-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-filter {
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
+        max-width: 400px;
+        height: 70vh;
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 15px;
+    }
+
+        .sidebar-filter.visible {
+            display: block;
+        }
+
+    .tea-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fltrpath input[type="number"] {
+        width: 48%;
+    }
+    .close {
+        display: block !important;
+    }
+}

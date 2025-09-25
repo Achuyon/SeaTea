@@ -4,41 +4,143 @@
         name: "Якийсь чай",
         description: "Цей чай ми виготовили на замовлення Укрзалізниці, поєднавши традиційні цілющі українські трави з карпатських гір.",
         image: "/images/tea1.png",
-        link: "/Products"
+        link: "/Products",
+        category: "Трав'яний",
+        type: "Органічний",
+        origin: "Карпати",
+        price: 80,
+        rating: 9
     },
     {
         id: 2,
         name: "Карпатський чай",
         description: "Натуральний чай з карпатських трав, без додаткових ароматизаторів та барвників.",
-        image: "/images/tea1.png",
-        link: "/Products"
+        image: "/images/tea2.jpg",
+        link: "/Products",
+        category: "Чорний",
+        type: "Класичний",
+        origin: "Карпати",
+        price: 70,
+        rating: 8
     },
     {
         id: 3,
         name: "Зелений чай SeaTea",
         description: "Легкий зелений чай з ніжним ароматом для щоденного вживання.",
-        image: "/images/tea1.png",
-        link: "/Products"
+        image: "/images/tea3.jpg",
+        link: "/Products",
+        category: "Зелений",
+        type: "Органічний",
+        origin: "Китай",
+        price: 90,
+        rating: 9
     },
     {
         id: 4,
         name: "Чорний чай SeaTea",
         description: "Насичений чорний чай для енергійного початку дня.",
-        image: "/images/tea1.png",
-        link: "/Products"
+        image: "/images/tea4.jpg",
+        link: "/Products",
+        category: "Чорний",
+        type: "Класичний",
+        origin: "Індія",
+        price: 85,
+        rating: 8
     },
     {
         id: 5,
         name: "Трав'яний мікс",
         description: "Суміш цілющих трав для здорового та бадьорого дня.",
-        image: "/images/tea1.png",
-        link: "/Products"
+        image: "/images/tea5.jpg",
+        link: "/Products",
+        category: "Трав'яний",
+        type: "Мікс",
+        origin: "Україна",
+        price: 75,
+        rating: 7
     },
     {
         id: 6,
         name: "Додатковий чай",
         description: "Цей чай поки що не відображається на головній сторінці.",
         image: "/images/tea1.png",
-        link: "/Products"
+        link: "/Products",
+        category: "Зелений",
+        type: "Органічний",
+        origin: "Японія",
+        price: 95,
+        rating: 9
+    },
+    {
+        id: 7,
+        name: "Білий чай Silver Needle",
+        description: "Вишуканий білий чай з ніжним смаком і легким ароматом квітів.",
+        image: "/images/tea2.jpg",
+        link: "/Products",
+        category: "Білий",
+        type: "Преміум",
+        origin: "Китай",
+        price: 120,
+        rating: 10
+    },
+    {
+        id: 8,
+        name: "Улун Milk Oolong",
+        description: "Напівферментований улун з вершковим ароматом та м’яким післясмаком.",
+        image: "/images/tea2.jpg",
+        link: "/Products",
+        category: "Улун",
+        type: "Класичний",
+        origin: "Тайвань",
+        price: 150,
+        rating: 10
+    },
+    {
+        id: 9,
+        name: "Матча Premium",
+        description: "Традиційний японський порошковий зелений чай для чайної церемонії.",
+        image: "/images/tea2.jpg",
+        link: "/Products",
+        category: "Зелений",
+        type: "Порошковий",
+        origin: "Японія",
+        price: 200,
+        rating: 10
+    },
+    {
+        id: 10,
+        name: "Чай Масала",
+        description: "Пряний чорний чай з індійськими спеціями — кардамоном, корицею та імбирем.",
+        image: "/images/tea3.jpg",
+        link: "/Products",
+        category: "Чорний",
+        type: "Пряний",
+        origin: "Індія",
+        price: 110,
+        rating: 9
+    },
+    {
+        id: 11,
+        name: "Ройбуш ванільний",
+        description: "Південноафриканський ройбуш з натуральним екстрактом ванілі.",
+        image: "/images/tea4.jpg",
+        link: "/Products",
+        category: "Трав'яний",
+        type: "Ароматизований",
+        origin: "ПАР",
+        price: 95,
+        rating: 8
+    },
+    {
+        id: 12,
+        name: "Холодний чай Lemon Ice",
+        description: "Освіжаючий зелений чай з лимоном для холодного заварювання.",
+        image: "/images/tea5.jpg",
+        link: "/Products",
+        category: "Зелений",
+        type: "Ароматизований",
+        origin: "Шрі-Ланка",
+        price: 85,
+        rating: 7
     }
 ];
