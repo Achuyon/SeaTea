@@ -7,11 +7,12 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Production from "./pages/Production";
 import Contact from "./pages/Contacts";
+import AboutDev from "./pages/AboutDev";
 import "./assets/styles.css";
 
 function App() {
     return (
-        <Router>
+        <Router basename="/SeaTea">
             <Navbar />
             <main>
                 <ScrollToTop />
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/products/:id" element={<Products />} />
                     <Route path="/production" element={<Production />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/AboutDev" element={<AboutDev />} />
                 </Routes>
             </main>
             <Footer />
