@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
+
+    // При завантаженні сторінки перевіряємо ширину
+    useEffect(() => {
+        if (window.innerWidth <= 768) {
+            setOpen(false); // на мобілках сховане
+        }
+    }, []);
 
     return (
         <nav className="navbar">
@@ -18,15 +25,15 @@ export default function Navbar() {
                     Меню ☰
                 </button>
 
+                {/* додаємо "show" якщо меню відкрите */}
                 <ul className={`menu ${open ? "show" : ""}`}>
-                    <li><Link to="/" onClick={() => setOpen(false)}>Головна</Link></li>
-                    <li><Link to="/about" onClick={() => setOpen(false)}>Про нас</Link></li>
-                    <li><Link to="/products" onClick={() => setOpen(false)}>Продукція</Link></li>
-                    <li><Link to="/production" onClick={() => setOpen(false)}>Виробництво</Link></li>
-                    <li><Link to="/contact" onClick={() => setOpen(false)}>Контакти</Link></li>
+                    <li><Link to="/" onClick={() => setOpen(true)}>Головна</Link></li>
+                    <li><Link to="/about" onClick={() => setOpen(true)}>Про нас</Link></li>
+                    <li><Link to="/products" onClick={() => setOpen(true)}>Продукція</Link></li>
+                    <li><Link to="/production" onClick={() => setOpen(true)}>Виробництво</Link></li>
+                    <li><Link to="/contact" onClick={() => setOpen(true)}>Контакти</Link></li>
                 </ul>
             </div>
         </nav>
     );
-
 }
