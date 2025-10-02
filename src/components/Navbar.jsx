@@ -14,7 +14,7 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <h1 className="logo">
-                <Link to="/"><img src="/images/logo.png" alt="Logo" /></Link>
+                <Link to="/"><img src="/SeaTea/images/logo.png" alt="Logo" /></Link>
             </h1>
 
             <div className="menu-wrapper">
@@ -22,7 +22,7 @@ export default function Navbar() {
                     className="menu-btn"
                     onClick={() => setOpen(!open)}
                 >
-                    Меню ☰
+                    Меню  <i class="fa-solid fa-bars"></i>
                 </button>
 
                 {/* додаємо "show" якщо меню відкрите */}
